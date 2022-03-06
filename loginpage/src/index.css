@@ -10,7 +10,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  background-image: url(https://www.sss-solutions.org/wp-content/uploads/2018/01/1116146294-login-page-background-image-112.jpg);
+  background-size: cover;  
 }
 
 code {
@@ -19,4 +20,8 @@ code {
 }
 .MuiTypography-body1 {
   font-size: 1.5rem;
+}
+
+.welcome{
+  color:"#ffffff";display:"flex";justify-content: "center"
 }

@@ -1,5 +1,5 @@
 import React, {useState}  from 'react';
-import { Grid, Paper, Avatar, TextField, Button, Typography, Link, makeStyles} from '@material-ui/core';
+import { Grid, Paper, Avatar, TextField, Button, Typography, Link, makeStyles,useMediaQuery } from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import "./login.css";
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -70,14 +70,24 @@ const Login=() => {
         }
     }
 
-    const paperStyle = { padding: 20,  width: 340, margin: "80px auto", fontSize:"30px","border": "solid", "borderRadius":"15px" }
+//     const paperStyle = {
+//         padding: 20, width: 340, margin: "80px auto", 
+//         fontSize: "30px", "border": "solid", "borderRadius": "15px",
+
+// }
+
+const paperStyle = window.screen.availWidth <= 320 ? 
+{   padding: 20, width: 280, margin: "80px auto",fontSize: "30px", "border": "solid", "borderRadius": "15px",  } : 
+{  padding: 20, width: 340, margin: "80px auto",fontSize: "30px", "border": "solid", "borderRadius": "15px",};
+
+
     const avatarStyle = { backgroundColor: "green", fontSize: "large" }
     //const textField = {fontSize:"40px"}
     const btnstyle = {margin:"8px 0px",fontSize: "medium"}
     const classes = useStyles();
     return ( 
         <Grid>
-            <Paper  style={paperStyle} >
+            <Paper  style={paperStyle} className="abc">
                 <Grid align="center">
                     <Avatar style={avatarStyle}><LockOutlinedIcon className={classes.large} /></Avatar>
                     <h2 style={{ color: "black" }}>Sign In</h2>

@@ -7,5 +7,87 @@
     .MuiTypography-root  {
         font-size: 1.5rem;
     } */
+/* 
+    body{
+        background-color:pink;
+    } */
+    
+    .box{
+      background-color:yellow;
+      /* position:relative; */
+    }
+    .fa-quote-left{
+      /* position:absolute; */
+      opacity:0.7;
+      top:13px;
+      left:4px;
+    
+    }
+    #text{
+      color:black;
+    }
+ #quote-box {
+     background-color: #8fd5f8;
+     width:40%;
+     justify-content: center;
+     border-radius: 2px solid blue;
+ }
+ .abc{
+background-color: pink;
+ }
+
+ .btn{
+  font-size: "20px";
+  font-weight: "700";
+  height: "fit-content";
+  margin: "20px";
+  padding:" 3px";
+   background-color: "rgb(255 255 255)";
+   color: "black";
+  border-radius:"8px";
+  padding: "4px 10px"
+ }
+
+.welcome{
+  color:"#ffffff";display:"flex";justify-content: "center"
+}
+
+.quotes {
+  justify-content:center; display:flex; color: yellow; background-color: #07789e;
+  width: 28%;
+    margin: 0px auto;
+    padding: 6px;
+    border: 1px solid rgb(25, 25, 90);
+    border-radius:12px;
+}
 
 
+@media only screen and (max-width: 450px) {
+  .welcome {
+   font-size: 20px;
+  }
+  .quotes {
+    font-size: 20px;
+    width: 90%;
+  }
+  #quote-box{
+    width: 95%;
+  }
+}
+
+@media  screen and (min-width: 450px) and (max-width:769px) {
+  /* .welcome {
+   font-size: 20px;
+  } */
+  .quotes {
+    font-size: 20px;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .quotes {
+    /* font-size: 50px; */
+    width: 40%;
+  }
+}

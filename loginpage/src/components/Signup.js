@@ -47,8 +47,6 @@ function Signup() {
         }
 
 
-
-
         const PostData = async (e) => {
             e.preventDefault();
             const { firstname, lastname,email,password,phoneNo } = user;
@@ -78,7 +76,13 @@ function Signup() {
         };
 
  
-const paperStyle = { padding: '18px 18px', width: 337, height: "85%", margin: "40px auto" ,"border":"groove","borderRadius":"10px"}
+// const paperStyle = { padding: '18px 18px', width: 337, height: "85%", margin: "40px auto" ,"border":"groove","borderRadius":"10px"}
+
+const paperStyle = window.screen.availWidth <= 400 ? 
+{ padding: '18px 18px', width: 275, height: "85%", margin: "40px auto" ,"border":"groove","borderRadius":"10px" } : 
+{ padding: '18px 18px', width: 337, height: "85%", margin: "40px auto" ,"border":"groove","borderRadius":"10px"};
+
+
     const avatarStyle = { backgroundColor: "green", fontSize: "small" }
     const btnstyle = { margin: "15px 0px", fontSize: "small" }
     const margTop = {marginTop:5}
