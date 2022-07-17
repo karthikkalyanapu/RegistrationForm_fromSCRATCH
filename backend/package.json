@@ -16,7 +16,8 @@
     "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.14",
-    "moongoose": "0.0.5"
+    "moongoose": "0.0.5",
+    "webpack": "^4.44.2"
   },
   "devDependencies": {
     "webpack": "^4.44.2",
