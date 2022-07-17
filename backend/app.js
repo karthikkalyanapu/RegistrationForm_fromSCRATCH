@@ -23,15 +23,16 @@ const PORT = process.env.PORT ||  3000;
 //     console.log("hello i m middleware");
 //     next();
 // }
-// app.get('/' , (req, res) => {
-//     res.send("the server is running at app.js");
-// });
+app.get('/' , (req, res) => {
+    res.send("the server is running at app.js");
+});
 
 
 // app.get('/home' , (req, res) => {
 //     console.log("hello from home");
 //     res.send("hello home page");
 // });
+
 
 app.listen(PORT, () => {
     console.log(`server is running at port ${PORT}`);
